@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+              content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Tracker</title>
+    </head>
+    <body>
+        <div class="canvas-wrapper">
+            <video id="videoEl" width="640" height="480" autoplay></video>
+            <canvas id="canvasEl" class="canvas-el" width="600" height="400"></canvas>
+        </div>
+    </body>
+    <script src="scripts.js"></script>
+    <style>
+        body {
+            background-color: black;
+            height: 100vh;
+            overflow-y: hidden;
+        }
+        .canvas-wrapper {
+            display: flex;
+            justify-content: center;
+        }
+        .canvas-el { border: 1px solid white; }
+    </style>
+</html>
